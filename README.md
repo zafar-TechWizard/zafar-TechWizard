@@ -1,8 +1,8 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=180&amp;section=header&amp;text=Md%20Zafar&amp;fontSize=42&amp;fontColor=fff&amp;animation=twinkling&amp;fontAlignY=32&amp;desc=Product%20Engineer%20%7C%20SaaS%2C%20Automation%20%26%20AI%20Systems&amp;descSize=16&amp;descAlignY=52&amp;descAlign=50"/>
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Md%20Zafar&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Product%20Engineer%20%7C%20SaaS%2C%20Automation%20%26%20AI%20Systems&descSize=16&descAlignY=52&descAlign=50)
 
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=22&amp;duration=3000&amp;pause=1000&amp;color=9745F5&amp;center=true&amp;vCenter=true&amp;multiline=true&amp;repeat=true&amp;random=false&amp;width=650&amp;height=100&amp;lines=Full-Stack+Product+Engineer+%7C+AI%2FML+Specialist;Building+SaaS+Platforms+%26+Intelligent+Systems;From+Idea+to+Implementation+%E2%80%94+End+to+End" alt="Typing SVG" /></a>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=9745F5&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=650&height=100&lines=Full-Stack+Product+Engineer+%7C+AI%2FML+Specialist;Building+SaaS+Platforms+%26+Intelligent+Systems;From+Idea+to+Implementation+%E2%80%94+End+to+End)](https://git.io/typing-svg)
 
 <br/>
 
@@ -15,18 +15,10 @@
 
 <br/>
 
-<a href="https://zafar-dev-portfolio.vercel.app/">
-<img src="https://img.shields.io/badge/Portfolio-7B2FF7?style=for-the-badge&amp;logo=google-chrome&amp;logoColor=white" alt="Portfolio"/>
-</a>
-<a href="https://linkedin.com/in/md-zafar">
-<img src="https://img.shields.io/badge/LinkedIn-7B2FF7?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="mailto:mdzafarddd@gmail.com">
-<img src="https://img.shields.io/badge/Email-7B2FF7?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"/>
-</a>
-<a href="https://github.com/zafar-TechWizard">
-<img src="https://img.shields.io/badge/GitHub-7B2FF7?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub"/>
-</a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-7B2FF7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://zafar-dev-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-7B2FF7?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/md-zafar)
+[![Email](https://img.shields.io/badge/Email-7B2FF7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mdzafarddd@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zafar-TechWizard)
 
 <br/><br/>
 
@@ -40,9 +32,7 @@
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Light%20Skin%20Tone.png" width="28"/> &nbsp;About Me
-
-<img align="right" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="80"/>
+## :technologist: &nbsp;About Me
 
 Product Engineer with hands-on experience building **SaaS platforms**, **automation systems**, and **AI-powered web applications**. I specialize in developing backend APIs, databases, modern frontend interfaces, and integrating practical AI/ML workflows such as **RAG pipelines** and **LLM-based features**. I take products from idea to implementation — designing architecture, writing production code, and shipping end-to-end systems that solve real problems.
 
@@ -59,39 +49,31 @@ My engineering philosophy centers on building **practical, working systems** —
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" width="28"/> &nbsp;Tech Stack
+## :hammer_and_wrench: &nbsp;Tech Stack
 
 <div align="center">
 
 ### Languages
 
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=python,javascript,typescript,html,css&amp;theme=dark" alt="Languages"/>
-</a>
+[![Languages](https://skillicons.dev/icons?i=python,javascript,typescript,html,css&theme=dark)](https://skillicons.dev)
 
 ### Frontend
 
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,bootstrap&amp;theme=dark" alt="Frontend"/>
-</a>
+[![Frontend](https://skillicons.dev/icons?i=nextjs,react,tailwind,bootstrap&theme=dark)](https://skillicons.dev)
 
 ### Backend & Databases
 
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,postgresql,mysql,mongodb,sqlite&amp;theme=dark" alt="Backend &amp; Databases"/>
-</a>
+[![Backend & Databases](https://skillicons.dev/icons?i=fastapi,flask,nodejs,postgresql,mysql,mongodb,sqlite&theme=dark)](https://skillicons.dev)
 
 ### Cloud, DevOps & Tooling
 
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,postman&amp;theme=dark" alt="Cloud DevOps &amp; Tooling"/>
-</a>
+[![Cloud DevOps & Tooling](https://skillicons.dev/icons?i=git,github,docker,linux,vscode,postman&theme=dark)](https://skillicons.dev)
 
 </div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Robot.png" width="28"/> &nbsp;AI/ML Expertise
+## :robot: &nbsp;AI/ML Expertise
 
 <div align="center">
 
@@ -108,7 +90,7 @@ My engineering philosophy centers on building **practical, working systems** —
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Card%20File%20Box.png" width="28"/> &nbsp;Featured Projects
+## :card_file_box: &nbsp;Featured Projects
 
 <details>
 <summary><b>CoWork Pro — Coworking Space Management SaaS</b></summary>
@@ -204,7 +186,7 @@ Built a real-time surveillance system combining computer vision with machine lea
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Briefcase.png" width="28"/> &nbsp;Experience
+## :briefcase: &nbsp;Experience
 
 ### Full-Stack Software Engineer &nbsp;|&nbsp; SoftKiwi
 `Sep 2025 – Mar 2026`
@@ -244,7 +226,7 @@ Built and presented a real-time surveillance and threat detection prototype, sec
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Trophy.png" width="28"/> &nbsp;Achievements
+## :trophy: &nbsp;Achievements
 
 <div align="center">
 
@@ -259,7 +241,7 @@ Built and presented a real-time surveillance and threat detection prototype, sec
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Scroll.png" width="28"/> &nbsp;Certifications
+## :scroll: &nbsp;Certifications
 
 <div align="center">
 
@@ -284,75 +266,59 @@ Built and presented a real-time surveillance and threat detection prototype, sec
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="28"/> &nbsp;Coding Profiles
+## :computer: &nbsp;Coding Profiles
 
 <div align="center">
 
-<a href="https://leetcode.com/zafar-TechWizard/">
-<img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&amp;logo=leetcode&amp;logoColor=white&amp;labelColor=0D1117" height="35" alt="LeetCode"/>
-</a>
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0D1117)](https://leetcode.com/zafar-TechWizard/)
 &nbsp;&nbsp;
-<a href="https://www.geeksforgeeks.org/user/zafar-TechWizard/">
-<img src="https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&amp;logo=geeksforgeeks&amp;logoColor=white&amp;labelColor=0D1117" height="35" alt="GeeksforGeeks"/>
-</a>
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=0D1117)](https://www.geeksforgeeks.org/user/zafar-TechWizard/)
 &nbsp;&nbsp;
-<a href="https://www.hackerrank.com/zafar_TechWizard">
-<img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&amp;logo=hackerrank&amp;logoColor=white&amp;labelColor=0D1117" height="35" alt="HackerRank"/>
-</a>
+[![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white&labelColor=0D1117)](https://www.hackerrank.com/zafar_TechWizard)
 &nbsp;&nbsp;
-<a href="https://www.codechef.com/users/zafar_techwiz">
-<img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&amp;logo=codechef&amp;logoColor=white&amp;labelColor=0D1117" height="35" alt="CodeChef"/>
-</a>
+[![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=0D1117)](https://www.codechef.com/users/zafar_techwiz)
 
 </div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="28"/> &nbsp;GitHub Analytics
+## :bar_chart: &nbsp;GitHub Analytics
 
 <div align="center">
 
-<a href="https://github.com/zafar-TechWizard">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=zafar-TechWizard&amp;show_icons=true&amp;theme=midnight-purple&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=9745F5&amp;icon_color=9745F5&amp;text_color=c9d1d9&amp;ring_color=9745F5" alt="GitHub Stats"/>
-</a>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=zafar-TechWizard&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=9745F5&icon_color=9745F5&text_color=c9d1d9&ring_color=9745F5)
 &nbsp;&nbsp;
-<a href="https://github.com/zafar-TechWizard">
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zafar-TechWizard&amp;layout=compact&amp;theme=midnight-purple&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=9745F5&amp;text_color=c9d1d9&amp;langs_count=8" alt="Top Languages"/>
-</a>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=zafar-TechWizard&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=9745F5&text_color=c9d1d9&langs_count=8)
 
 <br/><br/>
 
-<a href="https://github.com/zafar-TechWizard">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=zafar-TechWizard&amp;theme=midnight-purple&amp;hide_border=true&amp;background=0D1117&amp;stroke=9745F5&amp;ring=9745F5&amp;fire=9745F5&amp;currStreakLabel=9745F5&amp;sideLabels=c9d1d9&amp;currStreakNum=c9d1d9&amp;sideNums=c9d1d9&amp;dates=6e7681" alt="GitHub Streak"/>
-</a>
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=zafar-TechWizard&theme=midnight-purple&hide_border=true&background=0D1117&stroke=9745F5&ring=9745F5&fire=9745F5&currStreakLabel=9745F5&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=6e7681)
 
 </div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" width="28"/> &nbsp;GitHub Trophies
+## :star2: &nbsp;GitHub Trophies
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=zafar-TechWizard&amp;theme=discord&amp;no-frame=true&amp;no-bg=true&amp;column=7&amp;margin-w=10" alt="GitHub Trophies"/>
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=zafar-TechWizard&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10)
 
 </div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20Showing%20Americas.png" width="28"/> &nbsp;Contribution Activity
+## :globe_with_meridians: &nbsp;Contribution Activity
 
 <div align="center">
 
-<a href="https://github.com/zafar-TechWizard">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=zafar-TechWizard&amp;bg_color=0D1117&amp;color=9745F5&amp;line=9745F5&amp;point=FFFFFF&amp;area=true&amp;area_color=9745F5&amp;hide_border=true" alt="Contribution Graph"/>
-</a>
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=zafar-TechWizard&bg_color=0D1117&color=9745F5&line=9745F5&point=FFFFFF&area=true&area_color=9745F5&hide_border=true)
 
 </div>
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" width="28"/> &nbsp;Contribution Snake
+## :snake: &nbsp;Contribution Snake
 
 <div align="center">
 
@@ -366,7 +332,7 @@ Built and presented a real-time surveillance and threat detection prototype, sec
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bullseye.png" width="28"/> &nbsp;Current Focus
+## :dart: &nbsp;Current Focus
 
 ```yaml
 learning:
@@ -393,25 +359,17 @@ open_to:
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Incoming%20Envelope.png" width="28"/> &nbsp;Connect
+## :incoming_envelope: &nbsp;Connect
 
 <div align="center">
 
-<a href="mailto:mdzafarddd@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-mdzafarddd@gmail.com-EA4335?style=for-the-badge&amp;logo=gmail&amp;logoColor=white&amp;labelColor=0D1117" alt="Gmail"/>
-</a>
+[![Gmail](https://img.shields.io/badge/Gmail-mdzafarddd@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:mdzafarddd@gmail.com)
 &nbsp;
-<a href="https://linkedin.com/in/md-zafar">
-<img src="https://img.shields.io/badge/LinkedIn-Md_Zafar-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white&amp;labelColor=0D1117" alt="LinkedIn"/>
-</a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Md_Zafar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://linkedin.com/in/md-zafar)
 &nbsp;
-<a href="https://github.com/zafar-TechWizard">
-<img src="https://img.shields.io/badge/GitHub-zafar--TechWizard-8B5CF6?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;labelColor=0D1117" alt="GitHub"/>
-</a>
+[![GitHub](https://img.shields.io/badge/GitHub-zafar--TechWizard-8B5CF6?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117)](https://github.com/zafar-TechWizard)
 &nbsp;
-<a href="https://zafar-dev-portfolio.vercel.app/">
-<img src="https://img.shields.io/badge/Portfolio-zafar--techwizard-7B2FF7?style=for-the-badge&amp;logo=google-chrome&amp;logoColor=white&amp;labelColor=0D1117" alt="Portfolio"/>
-</a>
+[![Portfolio](https://img.shields.io/badge/Portfolio-zafar--techwizard-7B2FF7?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0D1117)](https://zafar-dev-portfolio.vercel.app/)
 
 </div>
 
@@ -419,8 +377,8 @@ open_to:
 
 <div align="center">
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=midnight-purple" alt="Dev Quote"/>
+![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=midnight-purple)
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,11,20&amp;height=120&amp;section=footer"/>
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer)
