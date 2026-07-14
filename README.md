@@ -45,89 +45,106 @@ I build software systems that solve real problems. My focus bridges the gap betw
 
 These architectural showcases outline the systems design and technical approaches behind my core builds.
 
-### 🧠 Showcase A: Three-Tier Cognitive AI Memory (`assistant-memory`)
-An open-source, modular Python library that gives AI agents a cognitive memory system inspired by the human brain—moving beyond simple vector retrieval to intent-aware graph traversal.
+### [🧠 Showcase A: Three-Tier Cognitive AI Memory (assistant-memory)](https://github.com/zafar-TechWizard/Assistant-Memory-System)
+A production-grade Python library providing a three-tier cognitive memory architecture (L1 Working Memory, L2 Neo4j Graph, and background extraction/consolidation pipelines) to supply agents with human-like recall.
 
 ```mermaid
 graph TD
-    %% Query Flow
-    UserQuery[User Input / Query] --> IntentRouter{Intent Router}
-    IntentRouter -->|Fact / Concept| FactPath[Knowledge Nodes]
-    IntentRouter -->|Emotion / Tone| EmotionPath[Emotion Nodes]
-    IntentRouter -->|Time / Context| TemporalPath[Episodic Nodes]
+    %% Ingestion Gate
+    Observe[MemoryManager.observe] -->|run_in_executor| Reactive[WorkingMemory.reactive_processing]
     
-    FactPath --> SpreadingActivation[Spreading Activation Traversal]
-    EmotionPath --> SpreadingActivation
-    TemporalPath --> SpreadingActivation
+    subgraph L1 Working Memory Ingestion
+        Reactive --> Extraction[EntityExtractor: spaCy & GLiNER NER]
+        Extraction --> Propagate[Active Entity Propagation & Expiry Pruning]
+        Propagate --> IntentClass[MemoryRouter.classify: Multi-signal Scorer]
+    end
+
+    IntentClass -->|If non-ambient, call route| RouteCascade[MemoryRouter.route Cascade]
+
+    subgraph L2 Long-Term Memory Retrieval Neo4j
+        RouteCascade --> Tier1[Tier 1: Intent-Routed BM25 / Spreading Activation / Temporal / Emotional]
+        RouteCascade --> Tier2[Tier 2: Concurrent Budget-Fill & Topic Relevance]
+        Tier1 & Tier2 --> Coverage[Coverage Check: Missed Entity/Time Detection]
+        Coverage -->|If misses found| Backups[Targeted Backup Cypher Queries]
+        Backups & Coverage --> Rerank[Cross-Encoder Reranker: ms-marco-MiniLM-L-6-v2]
+        Rerank --> Reinforce[Async Hebbian Connection Reinforcement]
+    end
+
+    Rerank --> Merge[Merge memories into must_know / context / associations tiers]
     
-    SpreadingActivation --> ContextSynthesis[4-Pillar Working Context]
-    ContextSynthesis --> SystemPrompt[LLM System Prompt]
+    subgraph L1 State Persistence & Sync
+        Merge --> WCUpdate[WorkingContextManager updates state]
+        WCUpdate --> Persist[Concurrently persist working_context.json & log turns]
+        Persist --> DoneEvent[Set _processing_done Threading Event]
+    end
 
-    %% Database & Background Consolidator
-    ConsolidationAgent[Memory Consolidation Agent] -. Runs Async .-> Neo4j[(Local Neo4j Graph DB)]
-    Neo4j <--> SpreadingActivation
-    ConsolidationAgent -. CREATE / UPDATE / CONTRADICT .-> Neo4j
+    %% Retrieval Gate
+    GetCtx[MemoryManager.get_context_async] -->|Await _processing_done| GetSnapshot[Read Context snapshot under RLock]
+    GetSnapshot --> ReturnCtx[Return 4-Pillar WorkingContext]
 
-    style UserQuery fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
-    style ContextSynthesis fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
-    style Neo4j fill:#1F2937,stroke:#7B2FF7,stroke-width:2px,color:#fff
-    style ConsolidationAgent fill:#1F2937,stroke:#9745F5,stroke-width:2px,color:#fff
+    style Observe fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style GetCtx fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style RouteCascade fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
+    style ReturnCtx fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
-*   **Semantic Graph Traversals**: Implemented spreading-activation retrieval using Neo4j to find linked memories based on conversational context, preventing topic-drift.
-*   **Intent-Aware Routing**: Boosts different memory edges dynamically based on whether the query is factual (knowledge-path), temporal (chronological-path), or emotional.
-*   **Agentic Consolidation**: An asynchronous reasoning loop that parses past interactions, updates graph entities, and explicitly handles conflicting beliefs over time without destroying historic lineage.
-*   **Zero Vendor Lock-In**: Operates locally using dockerized Neo4j, sentence embeddings, and local cross-encoder rerankers, requiring zero external SaaS bills.
+*   **L1 Working Memory**: Processes message text concurrently. Extracts entities via spaCy (sliding-window NER) and GLiNER (zero-shot concepts), maintains entity propagation, and manages short-term conversational context.
+*   **L2 Neo4j Graph Storage**: Maps memories as nodes (`ExperienceMemory`, `KnowledgeMemory`, `RelationshipMemory`) linked by weighted semantic edges (`CAUSED`, `TEMPORAL`, etc.) instead of flat vector indexes.
+*   **Intent-Routed Spreading Activation**: Uses pre-compiled regex scoring to classify queries into five intents (`entity`, `factual`, `emotional`, `temporal`, `ambient`), traversing specific paths with intent-boosted conductivity.
+*   **Agentic Consolidation**: An asynchronous background loop that uses an LLM to reason over conversation history, merging duplicates and resolving contradictory beliefs while preserving temporal lineage.
+*   **Safe Sync Gate**: Ensures context-retrieval gates block on a thread-safe `_processing_done` event, ensuring fresh contexts are generated without starving async IO database calls.
 
 ---
 
-### 🏢 Showcase B: Multi-Tenant SaaS & Data Pipelines (`CoWork-Pro`)
-A coworking space management platform built to scale, showcasing multi-tenant Postgres schema isolation, role/location access rules, and automated browser automation microservices.
-
-```mermaid
-graph LR
-    %% Tenancy Model
-    Client[Next.js Client] --> Gateway[FastAPI Backend Gateway]
-    Gateway --> Auth{RBAC & LBAC Guard}
-    Auth --> Tenant1[(Tenant A Schema)]
-    Auth --> Tenant2[(Tenant B Schema)]
-    
-    %% Automation pipelines
-    ScraperCron[Scheduler] --> PlaywrightCluster[Playwright Workers]
-    PlaywrightCluster -->|Extract & Transform| Queue[RabbitMQ / Process Queue]
-    Queue --> Gateway
-
-    style Client fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
-    style Auth fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
-    style Tenant1 fill:#1F2937,stroke:#7B2FF7,stroke-width:1px,color:#fff
-    style Tenant2 fill:#1F2937,stroke:#7B2FF7,stroke-width:1px,color:#fff
-```
-
-*   **Granular Tenancy Security**: Architected robust schema-level data separation with Role-Based Access Control (RBAC) and Location-Based Access Control (LBAC) to handle secure corporate bookings and billing.
-*   **Browser Automation Microservices**: Designed self-healing automated pipelines using Playwright to extract, sanitize, and update external resource availabilities into database records.
-*   **Scalable Stack**: Combines a fast-loading React/Next.js frontend with an asynchronous FastAPI gateway executing optimized PostgreSQL transactions.
-
----
-
-### 🔍 Showcase C: Search RAG & Real-Time Computer Vision (`InfoLytix` & `Surveillance`)
-Applied AI implementations focused on real-time data retrieval and processing, bridging the gap between web databases and computer vision models.
+### [🤖 Showcase B: Agentic Loop & Coordinator Core (SOFI)](https://github.com/zafar-TechWizard/SOFI)
+A personalized agentic AI assistant orchestrating sub-agents, inline/background tool execution, and local-first workspace monitoring.
 
 ```mermaid
 graph TD
-    UserQuery[Search Query] --> QueryExpansion[Query Optimizer]
-    QueryExpansion --> SearchAPIs[Web Search APIs]
-    SearchAPIs --> WebRetrieval[HTML Scrapers]
-    WebRetrieval --> CrossEncoder[Cross-Encoder Reranker]
-    CrossEncoder --> ContextChunking[Document Chunking & Vector Store]
-    ContextChunking --> LLMGen[Context-Augmented LLM Generation]
-    LLMGen --> VerifiedAnswer[Cited Natural Language Answer]
+    User([User Turn]) --> Input[sofi.py / CLI]
+    Input --> Process[Brain.process]
+    
+    %% Preparation Phase
+    subgraph Context & Mode Selection
+        Process --> ObserveL1[MemoryManager.observe user input]
+        ObserveL1 --> StateInfer[UserStateInferencer: Emotional State & Focus]
+        StateInfer --> ModeDecide[ModeController: Conversational / Focused / Creative / Empathetic]
+    end
 
-    style UserQuery fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
-    style VerifiedAnswer fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
+    %% System Prompt Building
+    ModeDecide --> BuildPrompt[Prompt Builder: Persona + Skills + Agent Notes + Active Workspace Tasks]
+    
+    %% LLM Execution Cascade
+    BuildPrompt --> LLMLoop{LLM Response Loop}
+    
+    subgraph Agentic Execution Loop
+        LLMLoop -->|Tool Call| SafetyGate{Safety Gate: User Confirmation}
+        SafetyGate -->|Approved Inline| InlineExec[Inline Execution: Parallel asyncio.gather]
+        SafetyGate -->|Approved Background| BgExec[BackgroundManager.dispatch]
+        InlineExec --> ToolMsg[Append Tool Results to History]
+        BgExec --> Ack[Yield "On it" Acknowledgment & Exit]
+        ToolMsg --> LLMLoop
+        
+        LLMLoop -->|Final Text| Stream[Stream Response Tokens to User]
+    end
+
+    %% Post Turn bookkeeping
+    Stream --> Finalize[Brain._finalize_turn]
+    Finalize --> ObserveL2[MemoryManager.observe assistant response]
+    Finalize --> AgentMem[AgentMemoryManager: Update persistent notes]
+
+    style User fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style LLMLoop fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
+    style Stream fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style BgExec fill:#1F2937,stroke:#7B2FF7,stroke-width:2px,color:#fff
+    style ObserveL2 fill:#1F2937,stroke:#9745F5,stroke-width:2px,color:#fff
 ```
 
-*   **Multi-Step RAG Pipeline (`InfoLytix`)**: A Perplexity-like research assistant that rewrites searches, crawls target web documents in real-time, reranks snippets, and generates cited, grounded answers.
-*   **Real-Time CV Surveillance**: Built a computer vision threat detection prototype during the Startup Thrive Hackathon (Top 4 Finish) that processes video streams concurrently and dispatches automated SMTP alert notifications.
+*   **Turn-Based Coordination**: Drives the agentic loop, feeding user inputs into the memory engine, inferring user emotional state, and dynamically deciding operational modes (`CONVERSATIONAL`, `FOCUSED`, `CREATIVE`, `EMPATHETIC`).
+*   **Dynamic Prompt Ingestion**: Compiles system instructions by binding persona guidelines, active tool/skill definitions, persistent Markdown agent memory notes, and pending workspace statuses.
+*   **Hybrid Execution & Safety Gate**: Safety gates filter tool calls requiring explicit authorization. Inline execution is executed in parallel, while long-running background tasks are dispatched to a `BackgroundManager`.
+*   **Non-Blocking Tool Call Ack**: Immediately yields inline acknowledgments (e.g. "On it.") for background dispatches, continuing conversation flow while monitoring background tasks in the subsequent turn's action state.
+*   **Compacting & Budget Control**: Monitors session token usage, compacting older conversation details into summary blocks to ensure context boundaries fit prompt limitations.
 
 ---
 
@@ -136,10 +153,15 @@ graph TD
 Here are some other systems, prototypes, and experiments I've built during my development journey:
 
 <details>
-<summary><b>📱 SOFI-App & AI Agent Ecosystem</b></summary>
+<summary><b>📱 SOFI-App (React Native Mobile Interface)</b></summary>
 
-*   **SOFI**: My personal agentic assistant utilizing sub-agent structures, memory tools, and the `assistant-memory` engine to run background processes.
-*   **SOFI-App**: A React Native (TypeScript) mobile application that acts as a secure, real-time control interface for interacting with my personal assistant.
+*   A React Native (TypeScript) mobile application that acts as a secure, real-time control interface for interacting with my personal assistant.
+</details>
+
+<details>
+<summary><b>🔍 InfoLytix (Search RAG Engine)</b></summary>
+
+*   A Perplexity-like research assistant that rewrites searches, crawls target web documents in real-time, reranks snippets using a cross-encoder model, and generates cited, grounded answers.
 </details>
 
 <details>
@@ -155,8 +177,15 @@ Here are some other systems, prototypes, and experiments I've built during my de
 </details>
 
 <details>
+<summary><b>🏢 CoWork Pro (Coworking Space SaaS)</b></summary>
+
+*   A coworking space management platform showcasing Next.js & FastAPI, PostgreSQL schema isolation, role/location access rules, and automated browser automation microservices.
+</details>
+
+<details>
 <summary><b>📊 Applied Machine Learning & Data Science</b></summary>
 
+*   **Real-Time Surveillance**: CV model employing deep learning to classfy threat types in live video feeds and trigger automated SMTP alerts. (Startup Thrive Hackathon Top 4).
 *   **Animal Species Classification**: CV model employing deep transfer learning to categorize animal classes.
 *   **Age & Gender Detection**: Computer vision model wrapped in a Streamlit GUI to perform live/image-based face classification.
 *   **Car Price Prediction**: Regression analysis model evaluating pre-owned vehicle valuations.
