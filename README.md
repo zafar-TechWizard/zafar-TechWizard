@@ -122,7 +122,7 @@ graph TD
         SafetyGate -->|Approved Inline| InlineExec[Inline Execution: Parallel asyncio.gather]
         SafetyGate -->|Approved Background| BgExec[BackgroundManager.dispatch]
         InlineExec --> ToolMsg[Append Tool Results to History]
-        BgExec --> Ack[Yield "On it" Acknowledgment & Exit]
+        BgExec --> Ack[Yield On It Acknowledgment and Exit]
         ToolMsg --> LLMLoop
         
         LLMLoop -->|Final Text| Stream[Stream Response Tokens to User]
