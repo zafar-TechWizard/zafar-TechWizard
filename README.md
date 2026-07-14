@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/dot-matrix-header.svg" width="100%" alt="Header Banner" />
+  <img src="https://raw.githubusercontent.com/zafar-TechWizard/zafar-TechWizard/main/assets/dot-matrix-header.svg" width="100%" alt="Header Banner" />
   
   <br/>
 
