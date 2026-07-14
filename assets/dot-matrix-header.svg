@@ -23,14 +23,14 @@
         font-style: italic;
         font-weight: 900;
         font-size: 110px;
-        fill: #0F172A;
+        fill: #FFFFFF;
         text-anchor: middle;
       }
     </style>
   </defs>
 
-  <!-- Clean light gray background matching the image style -->
-  <rect width="900" height="180" fill="#F1F5F9" rx="6" />
+  <!-- Dark slate black background to match GitHub Dark Mode -->
+  <rect width="900" height="180" fill="#0D1117" rx="6" />
 
   <!-- Render text with scanlines and horizontal jitter -->
   <g filter="url(#scanline-glitch)">
