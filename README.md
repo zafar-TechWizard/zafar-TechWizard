@@ -51,36 +51,36 @@ A production-grade Python library providing a three-tier cognitive memory archit
 ```mermaid
 graph TD
     %% Ingestion Gate
-    Observe[MemoryManager.observe] -->|run_in_executor| Reactive[WorkingMemory.reactive_processing]
+    Observe["MemoryManager.observe"] -->|run_in_executor| Reactive["WorkingMemory.reactive_processing"]
     
     subgraph L1 Working Memory Ingestion
-        Reactive --> Extraction[EntityExtractor: spaCy & GLiNER NER]
-        Extraction --> Propagate[Active Entity Propagation & Expiry Pruning]
-        Propagate --> IntentClass[MemoryRouter.classify: Multi-signal Scorer]
+        Reactive --> Extraction["EntityExtractor: spaCy and GLiNER NER"]
+        Extraction --> Propagate["Active Entity Propagation and Expiry Pruning"]
+        Propagate --> IntentClass["MemoryRouter.classify: Multi-signal Scorer"]
     end
 
-    IntentClass -->|If non-ambient, call route| RouteCascade[MemoryRouter.route Cascade]
+    IntentClass -->|If non-ambient, call route| RouteCascade["MemoryRouter.route Cascade"]
 
     subgraph L2 Long-Term Memory Retrieval Neo4j
-        RouteCascade --> Tier1[Tier 1: Intent-Routed BM25 / Spreading Activation / Temporal / Emotional]
-        RouteCascade --> Tier2[Tier 2: Concurrent Budget-Fill & Topic Relevance]
-        Tier1 & Tier2 --> Coverage[Coverage Check: Missed Entity/Time Detection]
-        Coverage -->|If misses found| Backups[Targeted Backup Cypher Queries]
-        Backups & Coverage --> Rerank[Cross-Encoder Reranker: ms-marco-MiniLM-L-6-v2]
-        Rerank --> Reinforce[Async Hebbian Connection Reinforcement]
+        RouteCascade --> Tier1["Tier 1: Intent-Routed BM25 / Spreading Activation / Temporal / Emotional"]
+        RouteCascade --> Tier2["Tier 2: Concurrent Budget-Fill and Topic Relevance"]
+        Tier1 & Tier2 --> Coverage["Coverage Check: Missed Entity/Time Detection"]
+        Coverage -->|If misses found| Backups["Targeted Backup Cypher Queries"]
+        Backups & Coverage --> Rerank["Cross-Encoder Reranker: ms-marco-MiniLM-L-6-v2"]
+        Rerank --> Reinforce["Async Hebbian Connection Reinforcement"]
     end
 
-    Rerank --> Merge[Merge memories into must_know / context / associations tiers]
+    Rerank --> Merge["Merge memories into must_know / context / associations tiers"]
     
     subgraph L1 State Persistence & Sync
-        Merge --> WCUpdate[WorkingContextManager updates state]
-        WCUpdate --> Persist[Concurrently persist working_context.json & log turns]
-        Persist --> DoneEvent[Set _processing_done Threading Event]
+        Merge --> WCUpdate["WorkingContextManager updates state"]
+        WCUpdate --> Persist["Concurrently persist working_context.json and log turns"]
+        Persist --> DoneEvent["Set _processing_done Threading Event"]
     end
 
     %% Retrieval Gate
-    GetCtx[MemoryManager.get_context_async] -->|Await _processing_done| GetSnapshot[Read Context snapshot under RLock]
-    GetSnapshot --> ReturnCtx[Return 4-Pillar WorkingContext]
+    GetCtx["MemoryManager.get_context_async"] -->|Await _processing_done| GetSnapshot["Read Context snapshot under RLock"]
+    GetSnapshot --> ReturnCtx["Return 4-Pillar WorkingContext"]
 
     style Observe fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
     style GetCtx fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
@@ -101,37 +101,37 @@ A personalized agentic AI assistant orchestrating sub-agents, inline/background 
 
 ```mermaid
 graph TD
-    User([User Turn]) --> Input[sofi.py / CLI]
-    Input --> Process[Brain.process]
+    User([User Turn]) --> Input["sofi.py / CLI"]
+    Input --> Process["Brain.process"]
     
     %% Preparation Phase
     subgraph Context & Mode Selection
-        Process --> ObserveL1[MemoryManager.observe user input]
-        ObserveL1 --> StateInfer[UserStateInferencer: Emotional State & Focus]
-        StateInfer --> ModeDecide[ModeController: Conversational / Focused / Creative / Empathetic]
+        Process --> ObserveL1["MemoryManager.observe user input"]
+        ObserveL1 --> StateInfer["UserStateInferencer: Emotional State and Focus"]
+        StateInfer --> ModeDecide["ModeController: Conversational / Focused / Creative / Empathetic"]
     end
 
     %% System Prompt Building
-    ModeDecide --> BuildPrompt[Prompt Builder: Persona + Skills + Agent Notes + Active Workspace Tasks]
+    ModeDecide --> BuildPrompt["Prompt Builder: Persona + Skills + Agent Notes + Active Workspace Tasks"]
     
     %% LLM Execution Cascade
-    BuildPrompt --> LLMLoop{LLM Response Loop}
+    BuildPrompt --> LLMLoop{"LLM Response Loop"}
     
     subgraph Agentic Execution Loop
-        LLMLoop -->|Tool Call| SafetyGate{Safety Gate: User Confirmation}
-        SafetyGate -->|Approved Inline| InlineExec[Inline Execution: Parallel asyncio.gather]
-        SafetyGate -->|Approved Background| BgExec[BackgroundManager.dispatch]
-        InlineExec --> ToolMsg[Append Tool Results to History]
-        BgExec --> Ack[Yield On It Acknowledgment and Exit]
+        LLMLoop -->|Tool Call| SafetyGate{"Safety Gate: User Confirmation"}
+        SafetyGate -->|Approved Inline| InlineExec["Inline Execution: Parallel asyncio.gather"]
+        SafetyGate -->|Approved Background| BgExec["BackgroundManager.dispatch"]
+        InlineExec --> ToolMsg["Append Tool Results to History"]
+        BgExec --> Ack["Yield On It Acknowledgment and Exit"]
         ToolMsg --> LLMLoop
         
-        LLMLoop -->|Final Text| Stream[Stream Response Tokens to User]
+        LLMLoop -->|Final Text| Stream["Stream Response Tokens to User"]
     end
 
     %% Post Turn bookkeeping
-    Stream --> Finalize[Brain._finalize_turn]
-    Finalize --> ObserveL2[MemoryManager.observe assistant response]
-    Finalize --> AgentMem[AgentMemoryManager: Update persistent notes]
+    Stream --> Finalize["Brain._finalize_turn"]
+    Finalize --> ObserveL2["MemoryManager.observe assistant response"]
+    Finalize --> AgentMem["AgentMemoryManager: Update persistent notes"]
 
     style User fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
     style LLMLoop fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
