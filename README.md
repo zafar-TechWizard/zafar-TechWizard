@@ -1,384 +1,208 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Md%20Zafar&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Product%20Engineer%20%7C%20SaaS%2C%20Automation%20%26%20AI%20Systems&descSize=16&descAlignY=52&descAlign=50)
-
 <div align="center">
+  <img src="assets/dot-matrix-header.svg" width="100%" alt="Header Banner" />
+  
+  <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=9745F5&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=650&height=100&lines=Full-Stack+Product+Engineer+%7C+AI%2FML+Specialist;Building+SaaS+Platforms+%26+Intelligent+Systems;From+Idea+to+Implementation+%E2%80%94+End+to+End)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=9745F5&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=100&lines=Product+Engineer+%7C+AI+Systems+Builder;SaaS+%7C+Microservices+%7C+Automation;Architecting+Systems+from+Zero+to+Production)](https://git.io/typing-svg)
 
-<br/>
+  <br/>
 
-![B.Tech CSE](https://img.shields.io/badge/B.Tech-Computer_Science_Engineering-7B2FF7?style=for-the-badge&labelColor=0D1117)
-![MM University](https://img.shields.io/badge/MM_University-2022--2026-8B5CF6?style=for-the-badge&labelColor=0D1117)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-zafar--dev-7B2FF7?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0D1117)](https://zafar-dev-portfolio.vercel.app/)
+  &nbsp;
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Md_Zafar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://www.linkedin.com/in/md-zafar-41687b157)
+  &nbsp;
+  [![Email](https://img.shields.io/badge/Email-mdzafarddd-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:mdzafarddd@gmail.com)
 
-<br/>
-
-![Location](https://img.shields.io/badge/India-0D1117?style=flat-square&logo=google-maps&logoColor=9745F5)
-
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-7B2FF7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://zafar-dev-portfolio.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-7B2FF7?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/md-zafar)
-[![Email](https://img.shields.io/badge/Email-7B2FF7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mdzafarddd@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zafar-TechWizard)
-
-<br/><br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=zafar-TechWizard&color=7B2FF7&style=flat-square&label=Profile+Views)
-&nbsp;
-![Followers](https://img.shields.io/github/followers/zafar-TechWizard?label=Followers&style=flat-square&color=7B2FF7&labelColor=0D1117)
-&nbsp;
-![Stars](https://img.shields.io/github/stars/zafar-TechWizard?label=Stars&style=flat-square&color=7B2FF7&labelColor=0D1117)
+  <br/><br/>
+  
+  ![Profile Views](https://komarev.com/ghpvc/?username=zafar-TechWizard&color=7B2FF7&style=flat-square&label=Profile+Views)
+  &nbsp;
+  ![Followers](https://img.shields.io/github/followers/zafar-TechWizard?label=Followers&style=flat-square&color=7B2FF7&labelColor=0D1117)
 
 </div>
 
 ---
 
-## :technologist: &nbsp;About Me
+## 👨‍💻 Engineering Philosophy
 
-Product Engineer with hands-on experience building **SaaS platforms**, **automation systems**, and **AI-powered web applications**. I specialize in developing backend APIs, databases, modern frontend interfaces, and integrating practical AI/ML workflows such as **RAG pipelines** and **LLM-based features**. I take products from idea to implementation — designing architecture, writing production code, and shipping end-to-end systems that solve real problems.
-
-My engineering philosophy centers on building **practical, working systems** — not prototypes, but production-grade software with clean architecture, role-based access controls, and scalable data pipelines. Whether it's a full SaaS platform or an intelligent research assistant, I focus on delivering software that works reliably and ships on time.
-
-<br/>
-
-**Open To:**
-
-- Full-Stack / Product Engineer roles at high-growth startups and product companies
-- AI/ML Engineering positions focused on applied LLM and RAG systems
-- Open source collaboration on developer tools and intelligent systems
-- Freelance & contract work for SaaS and automation projects
+I build software systems that solve real problems. My focus bridges the gap between **robust system design**, **highly-efficient web automation**, and **applied artificial intelligence**. I don't just build chatbots or basic CRUD interfaces—I design multi-tenant SaaS structures with fine-grained access isolation, architect microservice pipelines to scrape and orchestrate complex datasets, and build custom cognitive memory infrastructures for agentic AI applications.
 
 ---
 
-## :hammer_and_wrench: &nbsp;Tech Stack
+## 🛠️ Tech Stack Matrix
 
-<div align="center">
-
-### Languages
-
-[![Languages](https://skillicons.dev/icons?i=python,javascript,typescript,html,css&theme=dark)](https://skillicons.dev)
-
-### Frontend
-
-[![Frontend](https://skillicons.dev/icons?i=nextjs,react,tailwind,bootstrap&theme=dark)](https://skillicons.dev)
-
-### Backend & Databases
-
-[![Backend & Databases](https://skillicons.dev/icons?i=fastapi,flask,nodejs,postgresql,mysql,mongodb,sqlite&theme=dark)](https://skillicons.dev)
-
-### Cloud, DevOps & Tooling
-
-[![Cloud DevOps & Tooling](https://skillicons.dev/icons?i=git,github,docker,linux,vscode,postman&theme=dark)](https://skillicons.dev)
-
-</div>
+| Domain | Technologies |
+| :--- | :--- |
+| **Languages** | `Python` &middot; `TypeScript` &middot; `JavaScript` &middot; `HTML/CSS` &middot; `C` |
+| **Backend & Web APIs** | `FastAPI` &middot; `Flask` &middot; `Node.js` &middot; `REST APIs` &middot; `Microservices` |
+| **Frontend & Mobile** | `Next.js` &middot; `React` &middot; `React Native` &middot; `Tailwind CSS` |
+| **AI/ML & Cognitive Systems** | `LangChain` &middot; `RAG Pipelines` &middot; `Neo4j` &middot; `spaCy` &middot; `GLiNER` &middot; `OpenCV` &middot; `scikit-learn` &middot; `Hugging Face` |
+| **Databases & Infrastructure** | `PostgreSQL` &middot; `MongoDB` &middot; `SQLite` &middot; `Docker` &middot; `Linux` &middot; `Git/GitHub` |
 
 ---
 
-## :robot: &nbsp;AI/ML Expertise
+## 🏗️ Architectural Showcases
 
-<div align="center">
+These architectural showcases outline the systems design and technical approaches behind my core builds.
 
-| Domain | Proficiency | Details |
-|:---|:---:|:---|
-| **LLM Integration & Prompt Engineering** | `█████████░` 90% | LangChain, Groq, OpenAI API, prompt design, output parsing, chain-of-thought workflows |
-| **RAG Pipelines** | `████████░░` 85% | Document retrieval, vector embeddings, semantic search, context-augmented generation |
-| **Computer Vision** | `████████░░` 80% | OpenCV, transfer learning, image classification, real-time object detection |
-| **NLP & Text Processing** | `████████░░` 80% | Text extraction, summarization, sentiment analysis, named entity recognition |
-| **Generative AI Applications** | `█████████░` 85% | AI-powered research assistants, chatbots, content generation, intelligent workflows |
-| **ML Frameworks** | `███████░░░` 75% | Hugging Face Transformers, scikit-learn, TensorFlow, PyTorch fundamentals |
+### 🧠 Showcase A: Three-Tier Cognitive AI Memory (`assistant-memory`)
+An open-source, modular Python library that gives AI agents a cognitive memory system inspired by the human brain—moving beyond simple vector retrieval to intent-aware graph traversal.
 
-</div>
+```mermaid
+graph TD
+    %% Query Flow
+    UserQuery[User Input / Query] --> IntentRouter{Intent Router}
+    IntentRouter -->|Fact / Concept| FactPath[Knowledge Nodes]
+    IntentRouter -->|Emotion / Tone| EmotionPath[Emotion Nodes]
+    IntentRouter -->|Time / Context| TemporalPath[Episodic Nodes]
+    
+    FactPath --> SpreadingActivation[Spreading Activation Traversal]
+    EmotionPath --> SpreadingActivation
+    TemporalPath --> SpreadingActivation
+    
+    SpreadingActivation --> ContextSynthesis[4-Pillar Working Context]
+    ContextSynthesis --> SystemPrompt[LLM System Prompt]
+
+    %% Database & Background Consolidator
+    ConsolidationAgent[Memory Consolidation Agent] -. Runs Async .-> Neo4j[(Local Neo4j Graph DB)]
+    Neo4j <--> SpreadingActivation
+    ConsolidationAgent -. CREATE / UPDATE / CONTRADICT .-> Neo4j
+
+    style UserQuery fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style ContextSynthesis fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
+    style Neo4j fill:#1F2937,stroke:#7B2FF7,stroke-width:2px,color:#fff
+    style ConsolidationAgent fill:#1F2937,stroke:#9745F5,stroke-width:2px,color:#fff
+```
+
+*   **Semantic Graph Traversals**: Implemented spreading-activation retrieval using Neo4j to find linked memories based on conversational context, preventing topic-drift.
+*   **Intent-Aware Routing**: Boosts different memory edges dynamically based on whether the query is factual (knowledge-path), temporal (chronological-path), or emotional.
+*   **Agentic Consolidation**: An asynchronous reasoning loop that parses past interactions, updates graph entities, and explicitly handles conflicting beliefs over time without destroying historic lineage.
+*   **Zero Vendor Lock-In**: Operates locally using dockerized Neo4j, sentence embeddings, and local cross-encoder rerankers, requiring zero external SaaS bills.
 
 ---
 
-## :card_file_box: &nbsp;Featured Projects
+### 🏢 Showcase B: Multi-Tenant SaaS & Data Pipelines (`CoWork-Pro`)
+A coworking space management platform built to scale, showcasing multi-tenant Postgres schema isolation, role/location access rules, and automated browser automation microservices.
+
+```mermaid
+graph LR
+    %% Tenancy Model
+    Client[Next.js Client] --> Gateway[FastAPI Backend Gateway]
+    Gateway --> Auth{RBAC & LBAC Guard}
+    Auth --> Tenant1[(Tenant A Schema)]
+    Auth --> Tenant2[(Tenant B Schema)]
+    
+    %% Automation pipelines
+    ScraperCron[Scheduler] --> PlaywrightCluster[Playwright Workers]
+    PlaywrightCluster -->|Extract & Transform| Queue[RabbitMQ / Process Queue]
+    Queue --> Gateway
+
+    style Client fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style Auth fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
+    style Tenant1 fill:#1F2937,stroke:#7B2FF7,stroke-width:1px,color:#fff
+    style Tenant2 fill:#1F2937,stroke:#7B2FF7,stroke-width:1px,color:#fff
+```
+
+*   **Granular Tenancy Security**: Architected robust schema-level data separation with Role-Based Access Control (RBAC) and Location-Based Access Control (LBAC) to handle secure corporate bookings and billing.
+*   **Browser Automation Microservices**: Designed self-healing automated pipelines using Playwright to extract, sanitize, and update external resource availabilities into database records.
+*   **Scalable Stack**: Combines a fast-loading React/Next.js frontend with an asynchronous FastAPI gateway executing optimized PostgreSQL transactions.
+
+---
+
+### 🔍 Showcase C: Search RAG & Real-Time Computer Vision (`InfoLytix` & `Surveillance`)
+Applied AI implementations focused on real-time data retrieval and processing, bridging the gap between web databases and computer vision models.
+
+```mermaid
+graph TD
+    UserQuery[Search Query] --> QueryExpansion[Query Optimizer]
+    QueryExpansion --> SearchAPIs[Web Search APIs]
+    SearchAPIs --> WebRetrieval[HTML Scrapers]
+    WebRetrieval --> CrossEncoder[Cross-Encoder Reranker]
+    CrossEncoder --> ContextChunking[Document Chunking & Vector Store]
+    ContextChunking --> LLMGen[Context-Augmented LLM Generation]
+    LLMGen --> VerifiedAnswer[Cited Natural Language Answer]
+
+    style UserQuery fill:#7B2FF7,stroke:#fff,stroke-width:2px,color:#fff
+    style VerifiedAnswer fill:#9745F5,stroke:#fff,stroke-width:2px,color:#fff
+```
+
+*   **Multi-Step RAG Pipeline (`InfoLytix`)**: A Perplexity-like research assistant that rewrites searches, crawls target web documents in real-time, reranks snippets, and generates cited, grounded answers.
+*   **Real-Time CV Surveillance**: Built a computer vision threat detection prototype during the Startup Thrive Hackathon (Top 4 Finish) that processes video streams concurrently and dispatches automated SMTP alert notifications.
+
+---
+
+## 📂 Under-The-Hood Projects
+
+Here are some other systems, prototypes, and experiments I've built during my development journey:
 
 <details>
-<summary><b>CoWork Pro — Coworking Space Management SaaS</b></summary>
+<summary><b>📱 SOFI-App & AI Agent Ecosystem</b></summary>
 
-<br/>
-
-> A production-grade SaaS platform for coworking space operations — built end-to-end from database architecture to frontend UI. Manages members, bookings, billing, and admin workflows with role-based access controls.
-
-| Attribute | Details |
-|:---|:---|
-| **Stack** | Next.js, FastAPI, Tailwind CSS, PostgreSQL, SQL |
-| **Scale** | Multi-tenant architecture supporting concurrent coworking businesses |
-| **Performance** | Server-side rendering with optimized API response times |
-| **Security** | Role-based access controls, JWT authentication, input validation |
-| **Impact** | Unified business workflow replacing fragmented manual processes |
-
-<br/>
-
-[![Repo](https://img.shields.io/badge/Repository-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zafar-TechWizard)
-
-Full-stack SaaS platform architected from the ground up. Designed the complete database schema supporting member management, space bookings, billing cycles, and administrative dashboards. Implemented module-based planning with clean separation of concerns, enabling rapid feature iteration. The platform replaces fragmented spreadsheet-based workflows with a unified, role-aware system that scales with the business.
-
+*   **SOFI**: My personal agentic assistant utilizing sub-agent structures, memory tools, and the `assistant-memory` engine to run background processes.
+*   **SOFI-App**: A React Native (TypeScript) mobile application that acts as a secure, real-time control interface for interacting with my personal assistant.
 </details>
 
 <details>
-<summary><b>InfoLytix — AI-Powered Research Assistant</b></summary>
+<summary><b>📅 StudySync (Android Excel Schedule Parser)</b></summary>
 
-<br/>
-
-> An intelligent research assistant that retrieves and synthesizes web information into natural language responses using LLM-powered workflows and retrieval logic.
-
-| Attribute | Details |
-|:---|:---|
-| **Stack** | Python, Flask, LangChain, Groq LLM, JavaScript |
-| **Scale** | Real-time web retrieval with concurrent query processing |
-| **Performance** | Optimized retrieval pipelines with relevance-ranked results |
-| **Security** | API rate limiting, input sanitization, secure LLM integration |
-| **Impact** | Reduces research time by surfacing contextually relevant answers |
-
-<br/>
-
-[![Repo](https://img.shields.io/badge/Repository-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zafar-TechWizard)
-
-Built an end-to-end AI research pipeline integrating LangChain orchestration with Groq's LLM inference. The system retrieves information from web sources, applies retrieval-augmented generation to ground responses in factual data, and presents synthesized answers through a clean JavaScript frontend. Engineered the retrieval logic to improve answer relevance and usability through iterative prompt tuning and context window optimization.
-
+*   An utility application built to solve schedule drift. It downloads university Excel timetables, filters them dynamically based on user sections and batch details, and sets local alarm managers to notify about classes, venues, and teachers 15 minutes before they begin.
 </details>
 
 <details>
-<summary><b>ZenPulse — Wellness & Self-Care Platform</b></summary>
+<summary><b>🧘 ZenPulse (Flask Wellness Companion)</b></summary>
 
-<br/>
-
-> A wellness web application featuring an interactive chatbot and self-care tracking, built with structured data handling and backend logic supporting personalized wellness workflows.
-
-| Attribute | Details |
-|:---|:---|
-| **Stack** | Flask, SQLite, HTML/CSS, JavaScript |
-| **Scale** | User-level data isolation with session-based tracking |
-| **Performance** | Lightweight SQLite backend with minimal latency |
-| **Security** | Session management, data validation, secure storage |
-| **Impact** | Provides actionable self-care insights through structured tracking |
-
-<br/>
-
-[![Repo](https://img.shields.io/badge/Repository-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zafar-TechWizard)
-
-Developed a full wellness platform with an integrated chatbot for interactive self-care guidance. Built the complete backend logic including user data models, session handling, and structured data pipelines that power the tracking features. The chatbot provides contextual wellness recommendations based on user input patterns, while the tracking system visualizes self-care habits over time.
-
+*   A mental well-being dashboard built using Flask, containing a session-isolated LLM chatbot for emotional support and a virtual chatbot pet that responds dynamically to user text input.
 </details>
 
 <details>
-<summary><b>Real-Time Surveillance & Threat Detection System</b></summary>
+<summary><b>📊 Applied Machine Learning & Data Science</b></summary>
 
-<br/>
-
-> A machine learning-powered surveillance prototype with real-time threat detection and automated emergency alerting — built during Startup Thrive Hackathon (Top 4 Finalist).
-
-| Attribute | Details |
-|:---|:---|
-| **Stack** | Python, OpenCV, Machine Learning, SMTP |
-| **Scale** | Real-time video stream processing with concurrent detection |
-| **Performance** | Low-latency inference for real-time threat classification |
-| **Security** | Automated SMTP-based emergency notifications |
-| **Impact** | Hackathon Top 4 Finalist — viable prototype for campus security |
-
-<br/>
-
-[![Repo](https://img.shields.io/badge/Repository-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zafar-TechWizard)
-
-Built a real-time surveillance system combining computer vision with machine learning classifiers for automated threat detection. Implemented video stream processing using OpenCV, integrated ML models for threat classification, and built an automated emergency alerting workflow using SMTP-based notifications. The system was designed for campus-scale deployment and earned a Top 4 finish at the Startup Thrive Hackathon at ACIC RISE, CGC Landran.
-
+*   **Animal Species Classification**: CV model employing deep transfer learning to categorize animal classes.
+*   **Age & Gender Detection**: Computer vision model wrapped in a Streamlit GUI to perform live/image-based face classification.
+*   **Car Price Prediction**: Regression analysis model evaluating pre-owned vehicle valuations.
+*   **Email Spam Classifier**: NLP text classification model identifying and filtering spam emails.
+*   **Movie Recommendation System**: Similarity-search-based recommendation engine utilizing collaborative vector filtering.
 </details>
 
 ---
 
-## :briefcase: &nbsp;Experience
-
-### Full-Stack Software Engineer &nbsp;|&nbsp; SoftKiwi
-`Sep 2025 – Mar 2026`
-
-Owned full-stack development of client-facing web applications — from database architecture and API design to frontend implementation. Led the development of CoWork Pro, a coworking space management SaaS platform, managing module planning, database schema design, and end-to-end implementation.
-
-- Architected and built a multi-module SaaS platform handling member management, bookings, billing, and admin workflows
-- Designed database schemas with role-based access controls supporting unified business operations
-- Built automated web scraping pipelines using independent microservices for complex data extraction and processing
-
-`Next.js` `FastAPI` `Tailwind CSS` `PostgreSQL` `Microservices` `REST APIs`
-
-<br/>
-
-### Data Science & AI Intern &nbsp;|&nbsp; Celebal Technologies
-`May 2025 – Jul 2025`
-
-Worked on applied AI/ML projects including computer vision and generative AI use cases. Built production-ready models and explored practical implementations of AI-assisted pipelines for real-world applications.
-
-- Built an animal species classification model using transfer learning architectures with high accuracy
-- Developed applied Generative AI solutions using LangChain and LLM-based workflows
-- Explored and implemented AI-assisted pipelines for scalable real-world use cases
-
-`Python` `LangChain` `Computer Vision` `Transfer Learning` `LLM` `Hugging Face`
-
-<br/>
-
-### Hackathon Finalist (Top 4) &nbsp;|&nbsp; Startup Thrive @ ACIC RISE, CGC Landran
-`Mar 2024`
-
-Built and presented a real-time surveillance and threat detection prototype, securing a Top 4 finish among competing teams.
-
-- Developed a real-time threat detection system using machine learning and computer vision
-- Implemented automated emergency alerting workflows using SMTP-based notification systems
-
-`Python` `OpenCV` `Machine Learning` `SMTP` `Real-Time Systems`
-
----
-
-## :trophy: &nbsp;Achievements
+## 📊 Developer Metrics
 
 <div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=zafar-TechWizard&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=9745F5&icon_color=9745F5&text_color=c9d1d9&ring_color=9745F5" alt="GitHub Stats" />
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zafar-TechWizard&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=9745F5&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
+  
+  <br/>
+  
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=zafar-TechWizard&theme=midnight-purple&hide_border=true&background=0D1117&stroke=9745F5&ring=9745F5&fire=9745F5&currStreakLabel=9745F5&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=6e7681" alt="GitHub Streak" />
 
-| Recognition | Details |
-|:---:|:---|
-| **Hackathon Finalist — Top 4** | Startup Thrive Hackathon @ ACIC RISE, CGC Landran — Real-time surveillance and threat detection system |
-| **SaaS Platform Lead** | Led end-to-end development of CoWork Pro — a production-grade coworking space management platform |
-| **AI/ML Research Intern** | Selected for Celebal Technologies' competitive Data Science & AI internship program |
-| **Full-Stack Product Ownership** | Owned complete product lifecycle from database architecture to frontend deployment at SoftKiwi |
-
+  <br/>
+  
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zafar-TechWizard&bg_color=0D1117&color=9745F5&line=9745F5&point=FFFFFF&area=true&area_color=9745F5&hide_border=true" alt="Contribution Graph" />
 </div>
 
 ---
 
-## :scroll: &nbsp;Certifications
-
-<div align="center">
-
-### AWS
-
-![AWS Cloud Practitioner](https://img.shields.io/badge/AWS-Cloud_Practitioner_Essentials-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=0D1117)
-
-### Oracle
-
-![Oracle AI](https://img.shields.io/badge/Oracle-AI_Foundations-F80000?style=for-the-badge&logo=oracle&logoColor=white&labelColor=0D1117)
-
-### NPTEL
-
-![NPTEL Python](https://img.shields.io/badge/NPTEL-Python_for_Data_Science-2D9CDB?style=for-the-badge&logo=google-scholar&logoColor=white&labelColor=0D1117)
-![NPTEL ML](https://img.shields.io/badge/NPTEL-Machine_Learning_Foundations-2D9CDB?style=for-the-badge&logo=google-scholar&logoColor=white&labelColor=0D1117)
-
-### Cisco
-
-![Cisco Networking](https://img.shields.io/badge/Cisco-Networking_Essentials-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white&labelColor=0D1117)
-
-</div>
-
----
-
-## :computer: &nbsp;Coding Profiles
-
-<div align="center">
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0D1117)](https://leetcode.com/zafar-TechWizard/)
-&nbsp;&nbsp;
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white&labelColor=0D1117)](https://www.geeksforgeeks.org/user/zafar-TechWizard/)
-&nbsp;&nbsp;
-[![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white&labelColor=0D1117)](https://www.hackerrank.com/zafar_TechWizard)
-&nbsp;&nbsp;
-[![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=0D1117)](https://www.codechef.com/users/zafar_techwiz)
-
-</div>
-
----
-
-## :bar_chart: &nbsp;GitHub Analytics
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=zafar-TechWizard&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=9745F5&icon_color=9745F5&text_color=c9d1d9&ring_color=9745F5)
-&nbsp;&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=zafar-TechWizard&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=9745F5&text_color=c9d1d9&langs_count=8)
-
-<br/><br/>
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=zafar-TechWizard&theme=midnight-purple&hide_border=true&background=0D1117&stroke=9745F5&ring=9745F5&fire=9745F5&currStreakLabel=9745F5&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=6e7681)
-
-</div>
-
----
-
-## :star2: &nbsp;GitHub Trophies
-
-<div align="center">
-
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=zafar-TechWizard&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10)
-
-</div>
-
----
-
-## :globe_with_meridians: &nbsp;Contribution Activity
-
-<div align="center">
-
-![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=zafar-TechWizard&bg_color=0D1117&color=9745F5&line=9745F5&point=FFFFFF&area=true&area_color=9745F5&hide_border=true)
-
-</div>
-
----
-
-## :snake: &nbsp;Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zafar-TechWizard/zafar-TechWizard/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zafar-TechWizard/zafar-TechWizard/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/zafar-TechWizard/zafar-TechWizard/output/github-snake-dark.svg" />
-</picture>
-
-</div>
-
----
-
-## :dart: &nbsp;Current Focus
+## 🚀 Currently & Connecting
 
 ```yaml
 learning:
-  - Advanced System Design & Distributed Architectures
-  - Production-Grade RAG Pipeline Optimization
-  - Cloud-Native Development with AWS
-
+  - Advanced distributed system design & concurrency
+  - Custom LLM fine-tuning & domain-specific embeddings
+  - Cloud-native architecture (AWS certification track)
 building:
-  - SaaS platforms with multi-tenant architecture
-  - AI-powered developer tools and research assistants
-  - Microservice-based automation pipelines
-
-exploring:
-  - LLM Agents & Autonomous AI Workflows
-  - Edge Computing for Real-Time ML Inference
-  - Open Source contributions in AI/ML tooling
-
+  - Local-first knowledge systems and custom agent integrations
+  - Production SaaS models with isolation-first constraints
 open_to:
-  - Full-Stack / Product Engineer roles
-  - AI/ML Engineering positions
-  - Open source collaboration
-  - Freelance & contract opportunities
+  - Contract & freelance system builds (FastAPI backend architectures, RAG, Web Automation)
+  - Collaborative engineering in agentic and developer tooling projects
 ```
 
----
-
-## :incoming_envelope: &nbsp;Connect
-
 <div align="center">
-
-[![Gmail](https://img.shields.io/badge/Gmail-mdzafarddd@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:mdzafarddd@gmail.com)
-&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Md_Zafar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://linkedin.com/in/md-zafar)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-zafar--TechWizard-8B5CF6?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117)](https://github.com/zafar-TechWizard)
-&nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-zafar--techwizard-7B2FF7?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0D1117)](https://zafar-dev-portfolio.vercel.app/)
-
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=midnight-purple" alt="Dev Quote" />
+  
+  <br/>
+  
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" alt="Footer Wave" />
 </div>
-
----
-
-<div align="center">
-
-![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=midnight-purple)
-
-</div>
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer)
